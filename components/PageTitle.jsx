@@ -5,7 +5,7 @@ const PageTitle = ({firstLine, secondLine}) => {
     return (
       <Container
         pos="absolute"
-        right="25px"
+        right="18px"
         top="10px"
         style={{ zIndex: '1' }}
       >

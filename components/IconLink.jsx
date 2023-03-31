@@ -1,16 +1,14 @@
 // Pamiętaj każdą nazwę ikony zaimportować w _app.jsx i dodać do library
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Icon from '../styles/Icon';
+import Icon from '../styles/IconLinkStyle';
 
-const IconLink = ({ name, url }) => {
-  //   const getLink = (url) => `"${url}"`;
-
+const IconLink = ({ svgPath, color, url }) => {
+  console.log(svgPath, url, color);
   return (
-    <Icon>
-      <a href={url}>
-        <FontAwesomeIcon icon={name} />
-      </a>
+    <Icon href={url}>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill={color} d={svgPath} />
+      </svg>
     </Icon>
   );
 };

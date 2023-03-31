@@ -21,6 +21,16 @@ const Title = styled.h1`
   &:hover::before {
     transform: scaleY(2);
   }
+
+  @media (max-width: 638px) {
+    &::before {
+      left: 0px;
+      width: 15px;
+    }
+    &:hover::before {
+      transform: scaleY(3);
+    }
+  }
 `;
 
 export default Title;

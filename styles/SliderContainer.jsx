@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Container = styled.div`
+const SliderContainer = styled.div`
   height: ${(props) => props.h};
   width: ${(props) => props.w};
   position: ${(props) => props.pos};
@@ -17,10 +17,6 @@ const Container = styled.div`
   flex-wrap: ${(props) => props.wrap};
   margin-top: ${(props) => props.mt};
   min-height: ${(props) => props.mh};
-
-  @media (max-width: 768px) {
-    display: none;
-  }
 `;
 
-export default Container;
+export default SliderContainer;

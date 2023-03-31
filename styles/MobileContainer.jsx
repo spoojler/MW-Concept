@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Container = styled.div`
+const MobileContainer = styled.div`
   height: ${(props) => props.h};
   width: ${(props) => props.w};
   position: ${(props) => props.pos};
@@ -16,11 +16,12 @@ const Container = styled.div`
   gap: ${(props) => props.gap};
   flex-wrap: ${(props) => props.wrap};
   margin-top: ${(props) => props.mt};
+  margin-bottom: ${(props) => props.mb};
   min-height: ${(props) => props.mh};
 
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     display: none;
   }
 `;
 
-export default Container;
+export default MobileContainer;

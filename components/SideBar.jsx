@@ -1,12 +1,12 @@
 import Background from '../styles/Background';
-import { sideLogoStyle } from '../styles/InlineStyles';
+import { mobileStyle, sideLogoStyle } from '../styles/InlineStyles';
 import SideContainer from '../styles/SideContainer';
 import PageDescription from './PageDescription';
 
-const SideBar = ({description}) => {
+const SideBar = ({ description }) => {
   return (
     <SideContainer>
-        <PageDescription text={description} />
+      <PageDescription text={description} />
       <Background
         w="230px"
         h="150px"

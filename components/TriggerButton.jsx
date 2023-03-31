@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import Button from '../styles/Button';
 
-const TriggerButton = ({ textOnTrue, textOnFalse, isActive }) => {
-  const [active, setActive] = useState(isActive);
+const TriggerButton = ({ defaultText, changedText }) => {
+  const [active, setActive] = useState(true);
 
   return (
     <Button
+      style={{ marginTop: '18px' }}
       onMouseOver={(e) => {
         e.preventDefault();
         setActive(!active);
@@ -15,7 +16,7 @@ const TriggerButton = ({ textOnTrue, textOnFalse, isActive }) => {
         setActive(!active);
       }}
     >
-      {active ? textOnTrue : textOnFalse}
+      {active ? defaultText : changedText}
     </Button>
   );
 };

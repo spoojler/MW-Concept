@@ -2,15 +2,14 @@ import styled from 'styled-components';
 
 const imageUrl = (url) => `url("${url}")`;
 
-const Background = styled.div`
+const MobileBackground = styled.div`
   height: ${(props) => props.h};
   width: ${(props) => props.w};
   display: ${(props) => props.d};
   background-color: ${(props) => props.color};
   background-image: ${(props) => imageUrl(props.url)};
   background-size: cover;
-  background-position: center;
-  position: fixed;
+  background-position: ${(props) => (props.imgPos ? props.imgPos : 'center')};
   top: ${(props) => props.top};
   right: ${(props) => props.right};
   bottom: ${(props) => props.bottom};
@@ -18,9 +17,9 @@ const Background = styled.div`
   padding: ${(props) => props.p};
   margin: ${(props) => props.m};
 
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     display: none;
   }
 `;
 
-export default Background;
+export default MobileBackground;

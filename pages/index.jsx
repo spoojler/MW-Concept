@@ -1,48 +1,117 @@
-import Button from '../components/TriggerButton';
 import IconLink from '../components/IconLink';
-import NavBar from '../components/NavBox';
 import PageTitle from '../components/PageTitle';
 import SideBar from '../components/SideBar';
+import TriggerButton from '../components/TriggerButton';
 import Background from '../styles/Background';
 import Container from '../styles/Container';
-import GlobalStyle from '../styles/GlobalStyle';
-import { verticalSpanLine } from '../styles/InlineStyles';
+import {
+  sideLogoStyle,
+  smallLogoStyle,
+  verticalSpanLine,
+} from '../styles/InlineStyles';
+import { facebookPath, instagramPath, pinterestPath } from '../assets/svgIcons';
+import NavBox from '../components/NavBox';
+import MobileContainer from '../styles/MobileContainer';
+import Title from '../styles/Title';
+import MobileBackground from '../styles/MobileBackground';
+import MenuButton from '../components/MenuButton';
+import PageDescription from '../components/PageDescription';
+import Description from '../styles/Description';
 
 const HomePage = () => {
   const homePageDescription =
-    "Zajmuję się kompleksowym projektowaniem wnętrz. Począwszy od zarysowania moodboard'u po nadzór nad pracami. Do wykonania prostej wizualizacji wystarczą mi Twoje wymiary. Nie czekaj, chyba nie chcesz później żałować?";
+    'Zajmuję się kompleksowym projektowaniem wnętrz. Do wykonania prostej wizualizacji wystarczą mi Twoje wymiary i kilka inspiracji. Nie rób wszystkiego sam, chyba nie chcesz później żałować?';
 
   return (
     <>
-      <GlobalStyle />
       <Background h="100vh" w="100vw" url="/background.jpg">
-        <Container pos="absolute" d="flex" top="-60px">
-          <Button textOnFalse={'ENG'} textOnTrue={'PL'} isActive={true} />
+        <Container pos="absolute" d="flex" align="flex-start" top="0px">
+          <TriggerButton changedText={'ENG'} defaultText={'PL'} />
           <span style={verticalSpanLine}></span>
-          <Button textOnFalse={'LIGHT'} textOnTrue={'DARK'} isActive={true} />
+          <TriggerButton changedText={'LIGHT'} defaultText={'DARK'} />
         </Container>
-        <NavBar />
+        <NavBox />
         <PageTitle firstLine={'PROJEKT TWOJEGO'} secondLine={`WNĘTRZA`} />
         <SideBar description={homePageDescription} />
         <Container
           pos="absolute"
-          bottom="10px"
+          bottom="20px"
           d="flex"
           w="100%"
           justify="center"
-          gap="40px"
+          gap="50px"
         >
-          <IconLink name={'fa-brands fa-facebook'} url="https://facebook.com" />
+          {/* <IconLink
+          svgPath={facebookPath}
+          color="white"
+          url="https://facebook.com"
+        /> */}
           <IconLink
-            name={'fa-brands fa-instagram'}
-            url="https://instagram.com"
+            svgPath={instagramPath}
+            color="white"
+            url="https://www.instagram.com/mw__concept/"
           />
           <IconLink
-            name={'fa-brands fa-pinterest'}
-            url="https://facebook.com"
+            svgPath={pinterestPath}
+            color="white"
+            url="https://pl.pinterest.com/MW_concept/_created"
           />
         </Container>
       </Background>
+
+      <MobileContainer
+        w={'100vw'}
+        color={'black'}
+        d={'flex'}
+        direction={'column'}
+        align={'center'}
+      >
+        <MenuButton />
+        <MobileBackground
+          w="115px"
+          h="75px"
+          url="/logo-mw-concept.png"
+          m="1rem"
+          style={smallLogoStyle}
+        />
+        <Title
+          color="white"
+          style={{ paddingRight: '10px', position: 'relative' }}
+        >
+          PROJEKT TWOJEGO
+          <br />
+          WNĘTRZA
+        </Title>
+        <Description opacity="0.6" color="white" align="right" mt="-40px">
+          {homePageDescription}
+        </Description>
+        <MobileBackground
+          w="100vw"
+          h="100vw"
+          url="/background.jpg"
+          imgPos="left"
+        ></MobileBackground>
+        <MobileContainer
+          d="flex"
+          h="100%"
+          justify="center"
+          gap="50px"
+          align="center"
+          mt="1rem"
+          mb='1rem'
+        >
+          <IconLink
+            svgPath={instagramPath}
+            color="white"
+            url="https://www.instagram.com/mw__concept/"
+          />
+          <IconLink
+            svgPath={pinterestPath}
+            color="white"
+            url="https://pl.pinterest.com/MW_concept/_created"
+          />
+        </MobileContainer>
+      </MobileContainer>
     </>
   );
 };

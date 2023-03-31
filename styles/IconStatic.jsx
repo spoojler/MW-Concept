@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-const Icon = styled.span`
+const IconStatic = styled.div`
+  width: 50px;
+  height: 50px;
   transform: translateY(0);
   transition: all 0.2s linear;
   opacity: 0.7;
@@ -8,10 +10,5 @@ const Icon = styled.span`
     transform: translateY(-10px);
     opacity: 1;
   }
-
-  a {
-    font-size: 3.5rem;
-    color: #ffffffdd;
-  }
 `;
-export default Icon;
+export default IconStatic;

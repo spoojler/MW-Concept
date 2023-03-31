@@ -11,7 +11,8 @@ const NavContainer = styled.div`
   box-shadow: -10px 10px 8px #000000aa;
   padding: 1rem 0rem 2rem 4rem;
   line-height: 7rem;
-  border: 3px solid #421212;
+  border: 4px solid #421212;
+  border-radius: 3px;
   position: relative;
   top: 150px;
   left: 100px;
