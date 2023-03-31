@@ -10,7 +10,7 @@ import GlobalStyle from '../styles/GlobalStyle';
 
 config.autoAddCss = false;
 
-const montserrat = Montserrat({ subsets: ['latin'] });
+const montserrat = Montserrat({ subsets: ['latin', 'latin-ext'] });
 library.add(faFacebook, faInstagram, faPinterest);
 
 export default function MyApp({ Component, pageProps }) {

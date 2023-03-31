@@ -17,6 +17,7 @@ const Projects = () => {
 
   const firstProjectTitle = 'Łazienka w odcieniach beżu i miedzi.';
   const secondProjectTitle = 'Dziecięcy pokój cyrkowy.';
+  const thirdProjectTitle = 'Łazienka z powiewem bryzy śródziemnomorskiej.';
 
   return (
     <>
@@ -40,6 +41,10 @@ const Projects = () => {
         <SingleProject
           title={secondProjectTitle}
           projectImagesArray={projects.project2}
+        />
+        <SingleProject
+          title={thirdProjectTitle}
+          projectImagesArray={projects.project3}
         />
       </Container>
       <MenuButton />

@@ -6,7 +6,7 @@ import Container from '../styles/Container';
 import {
   smallLogoStyle,
 } from '../styles/InlineStyles';
-import { facebookPath, instagramPath, pinterestPath } from '../assets/svgIcons';
+import { instagramPath, pinterestPath } from '../assets/svgIcons';
 import NavBox from '../components/NavBox';
 import MobileContainer from '../styles/MobileContainer';
 import Title from '../styles/Title';

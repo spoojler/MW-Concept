@@ -10,4 +10,11 @@ export const projects = {
     '/projekty/pokój-dziecięcy-cyrk.jpeg',
     '/projekty/pokój-dziecięcy-cyrk-1.jpeg',
   ],
+  project3: [
+    '/projekty/łazienka-bryza.jpeg',
+    '/projekty/łazienka-bryza-1.jpeg',
+    '/projekty/łazienka-bryza-2.jpeg',
+    '/projekty/łazienka-bryza-3.jpeg',
+    '/projekty/łazienka-bryza-4.jpeg',
+  ],
 };
