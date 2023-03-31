@@ -1,4 +1,3 @@
-import { downArrow } from '../assets/svgIcons';
 import MenuButton from '../components/MenuButton';
 import PageTitle from '../components/PageTitle';
 import SideBar from '../components/SideBar';
@@ -8,8 +7,7 @@ import { projects } from '../projectsSources';
 import Background from '../styles/Background';
 import Container from '../styles/Container';
 import Description from '../styles/Description';
-import IconStatic from '../styles/IconStatic';
-import { downArrowProjectsSite, smallLogoStyle } from '../styles/InlineStyles';
+import { smallLogoStyle } from '../styles/InlineStyles';
 import MobileBackground from '../styles/MobileBackground';
 import MobileContainer from '../styles/MobileContainer';
 
@@ -33,12 +31,6 @@ const Projects = () => {
         <PageTitle firstLine={'PROJEKTY'} />
         <SideBar description={pageDescription} />
       </Background>
-
-      {/* <IconStatic style={downArrowProjectsSite}>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-          <path fill={'white'} d={downArrow} />
-        </svg>
-      </IconStatic> */}
 
       <Container w="70%" d="flex" direction="column">
         <SingleProject

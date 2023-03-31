@@ -1,10 +1,7 @@
 import MenuButton from '../components/MenuButton';
 import Background from '../styles/Background';
 import Container from '../styles/Container';
-import CustomLink from '../styles/CustomLink';
 import Description from '../styles/Description';
-import Header1 from '../styles/Header1';
-import Icon from '../styles/IconLinkStyle';
 import { smallLogoStyle } from '../styles/InlineStyles';
 import MobileBackground from '../styles/MobileBackground';
 import MobileContainer from '../styles/MobileContainer';

@@ -1,13 +1,10 @@
 import IconLink from '../components/IconLink';
 import PageTitle from '../components/PageTitle';
 import SideBar from '../components/SideBar';
-import TriggerButton from '../components/TriggerButton';
 import Background from '../styles/Background';
 import Container from '../styles/Container';
 import {
-  sideLogoStyle,
   smallLogoStyle,
-  verticalSpanLine,
 } from '../styles/InlineStyles';
 import { facebookPath, instagramPath, pinterestPath } from '../assets/svgIcons';
 import NavBox from '../components/NavBox';
@@ -15,7 +12,6 @@ import MobileContainer from '../styles/MobileContainer';
 import Title from '../styles/Title';
 import MobileBackground from '../styles/MobileBackground';
 import MenuButton from '../components/MenuButton';
-import PageDescription from '../components/PageDescription';
 import Description from '../styles/Description';
 
 const HomePage = () => {
@@ -25,11 +21,11 @@ const HomePage = () => {
   return (
     <>
       <Background h="100vh" w="100vw" url="/background.jpg">
-        <Container pos="absolute" d="flex" align="flex-start" top="0px">
+        {/* <Container pos="absolute" d="flex" align="flex-start" top="0px">
           <TriggerButton changedText={'ENG'} defaultText={'PL'} />
           <span style={verticalSpanLine}></span>
           <TriggerButton changedText={'LIGHT'} defaultText={'DARK'} />
-        </Container>
+        </Container> */}
         <NavBox />
         <PageTitle firstLine={'PROJEKT TWOJEGO'} secondLine={`WNĘTRZA`} />
         <SideBar description={homePageDescription} />
