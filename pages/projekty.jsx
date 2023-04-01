@@ -77,11 +77,11 @@ const Projects = () => {
           style={{ color: 'white' }}
         >
           <Slider projectArray={projects.project1} />
-          <h4 style={{ marginBottom: '5rem' }}>{firstProjectTitle}</h4>
+          <h4>{firstProjectTitle}</h4>
           <Slider projectArray={projects.project2} />
           <h4>{secondProjectTitle}</h4>
           <Slider projectArray={projects.project3} />
-          <h4>{thirdProjectTitle}</h4>
+          <h4 style={{textAlign: 'center'}}>{thirdProjectTitle}</h4>
         </MobileContainer>
       </MobileContainer>
     </>
