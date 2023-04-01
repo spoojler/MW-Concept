@@ -80,6 +80,8 @@ const Projects = () => {
           <h4 style={{ marginBottom: '5rem' }}>{firstProjectTitle}</h4>
           <Slider projectArray={projects.project2} />
           <h4>{secondProjectTitle}</h4>
+          <Slider projectArray={projects.project3} />
+          <h4>{thirdProjectTitle}</h4>
         </MobileContainer>
       </MobileContainer>
     </>
